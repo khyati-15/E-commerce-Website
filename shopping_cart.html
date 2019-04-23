@@ -1,0 +1,128 @@
+<html>
+<style>
+
+.button {
+  border: 50px;
+  background-color: black;
+  border-radius: 150px;
+  height:100px;
+  width:100px;
+  color: yellow;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+display: inline-block;
+
+}
+    #design
+    {
+        background-color:papayawhip;
+        width:100%;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #design1
+    {
+        border-radius: 5px;
+        background-color:papayawhip;
+        width:100%;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    body
+    {
+        background-color:skyblue;
+    }
+    #divisions
+    {
+        height: 100%;
+    }
+    #division1
+    {
+        height: 100%;
+        width:50%;
+        background-color: white;
+    }
+    #header
+    {
+        background-color: darkblue;
+        color: white;
+        width: 100%;
+        font-family:cursive;
+    height: 55px;
+    }
+    #logout
+    {
+        background-color: darkblue;
+        color: white;
+        border-color: darkblue;
+    }
+    #ListOfProducts
+    {
+        border:solid;
+        border-color:darkgoldenrod;
+    }
+    #display
+    {
+          border:solid;
+        border-color:darkgoldenrod;
+    }
+    #image
+    {
+        height:55px;
+/*        width:55px;*/
+    }
+</style>
+<head>
+  </head>
+  <body>
+    <div id="header">
+      <left><img src="logo1.JPG" id="image" align="left"></left>
+       <h3 id="user" align="right"></h3>
+<!--       <button id="logout">LOGOUT</button>-->
+   </div>
+   <p align="justify">
+   <table id="divisions" border=0 cellspacing=20 cellpadding=20>
+   <tr>
+   <th id="division1">
+    <h1><center>Products Available</center></h1>
+    <br>
+    <div id="design"><br>
+    <center>
+    <table id="ListOfProducts" border=1 cellpadding=20>
+       <tr>
+        <th>Sr.No.</th>
+        <th>Name</th>
+        <th>Stock Available</th>
+        <th>Quantity Required</th>
+        <th>Price per item</th>
+        <th>ADD</th>
+        </tr>
+    </table>
+        </center>
+    <br>
+    </div>
+       </th>
+       <th id="division1">
+      <center><h1>CART</h1></center>
+       <div id="design1"><br><center>  <table id="display" border=1 cellpadding=20>
+             
+          </table>
+        </center><br></div> 
+        <br><br><br>
+                <br><br><br>
+                        
+                                <br><br><br>
+                                        <br><br><br>
+                                        
+<!--                                        <div id="Payment"></div>-->
+           <button class="button" id="Payment_Button">Buy</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button class="button" id="Clear">Clear</button>
+       </th></tr></table>
+    </body>
+    <script src="shopping_cart.js"></script>
+    </html>
