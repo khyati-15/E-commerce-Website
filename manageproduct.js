@@ -1,13 +1,17 @@
 var Opened_Panel=0;
 var products=[];
-var productId = 1;
+var productId = 0;
 var divAddProduct = document.getElementById("divAddProduct");
 var divListProducts = document.getElementById("divListProducts");
 var Item_id=localStorage.getItem("Product_Id");
 var Item_products=localStorage.getItem("Product_data");
 var aAddProduct = document.getElementById("AddProduct");
 products=JSON.parse(Item_products);
+if(products=='')
+    products=[];
 productId=JSON.parse(Item_id);
+if(productId=='')
+    productId=0;
 productId+=1;
 
 for(var i=0;i<products.length;i++)
