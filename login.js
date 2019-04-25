@@ -121,11 +121,8 @@ if(opened_panel==1)
         else{
           var   users=localStorage.getItem("Users");
             customers=JSON.parse(users);
-            console.log(customers);
-                        //console.log(customers[0].email);
-                        //console.log(customers[0].pass);
-
-
+            if(customers=='')
+                customers=[];
                 var find=0;
                 for(var i=0;i<customers.length;i++)
                     {
@@ -172,6 +169,8 @@ if(opened_panel==1)
             newobject.cnt=document.getElementById("cnt").value;
         var users=localStorage.getItem("Users");
         customers=JSON.parse(users);
+         if(customers=='')
+                customers=[];
         var find=0;
         for(var i=0;i<customers.length;i++)
             if(newobject.email==customers[i].email)
